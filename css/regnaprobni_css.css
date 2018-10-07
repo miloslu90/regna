@@ -1,0 +1,134 @@
+*{ box-sizing:border-box; font-family:"Calibri"; }
+*{margin: 0}
+#header{
+    background:url("../img/hero-bg.jpg") no-repeat;
+    background-size: cover;
+    min-height: 100vh;   
+    background-attachment: fixed;
+}
+#headerIner{
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+}
+#menu-block {
+ float: right; 
+ background: rgba(52, 59, 64, 0.9);
+}
+.margin-top{
+    margin-top: 5px;
+}
+.margin-top-40vh{
+    margin-top: 35vh;
+}
+.headerButton{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    font-size: 20px;
+    background: transparent;
+}
+#wlcome-block h1{
+font-size: 55px;
+}
+#wlcome-block h2{
+font-size: 27px;
+}
+
+/*meni-block*/
+
+
+.margin-right{
+    margin-right: 4%;
+}
+.margin-left{
+    margin-left: 14%;
+}
+
+#menu-block ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    }
+    #menu-block ul li{
+    float: left;
+    position: relative;
+    
+    }
+    #menu-block ul li a{
+    display: block;
+    text-decoration-line: none;
+    padding: 10px;
+    
+    }
+    #menu-block ul li:hover{
+        background: rgb(141, 130, 130);
+       
+    }
+    #menu-block ul li a:hover{
+       color: white;
+       
+    }
+    a{
+        color:white;
+        font-size: 14px;
+    }
+    
+    #menu-block ul li ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        
+    }
+    #menu-block ul li ul li{
+       width: 100%;
+     }
+    #menu-block ul li ul li a{
+       color: black;
+     }
+    
+    #menu-block ul li:hover ul {
+                display:block;
+                background:white;
+            }
+    
+    #menu-mob{
+        width:50px;
+        border: 1px solid #ccc;
+        float: left;
+        display: none;
+    
+    }
+    
+    #menu-mob div{
+        width: 35px;
+        height: 5px;
+        background: black;
+        margin:6px auto;
+        
+    
+    }
+    @media screen and (max-width:760px) {
+        
+        #menu-block ul {
+            display: none;
+        }
+    
+        #menu-mob{
+            display: block;
+        }
+    
+        #menu-block ul li {
+            width: 100%;
+        }
+    
+    
+        #menu-block ul li ul{
+        display: none;
+        position: relative;
+        width: 100%;
+        
+    }
+    
+    }
